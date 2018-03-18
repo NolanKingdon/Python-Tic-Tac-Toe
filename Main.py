@@ -157,7 +157,7 @@ def main():
 			create_board()
 			if win_check(board_plays, symbols, points, move_history):
 				break
-		print("Player 1 score: {}\nPlayer 2 score: {}".format(points[0],points[1]))
+		print("Player 1 score: {}\nPlayer 2 score: {}\n".format(points[0],points[1]))
 		replay = str(input("Play Again?\n"))
 		if replay[0].lower() == "y":
 			reset_game(board_plays, symbols, move_history)
@@ -166,4 +166,5 @@ def main():
 			break
 	print("Thanks for playing! Goodbye")
 
-main()
+if __name__ == "__main__":
+	main()
